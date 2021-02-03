@@ -22,7 +22,7 @@ In the event of school being taught online due to Covid-19, students are unable 
 - GitLab
 - Git
 - Postgres/Mongo
-- ocker
+- Docker
 
 
 
