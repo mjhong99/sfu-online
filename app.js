@@ -3,9 +3,7 @@ const app = express();
 const expressLayouts = require('express-ejs-layouts');
 
 //Postgres setup
-const dbConfig = require('./dbConfig');
-const { pool } = dbConfig;
-
+const { pool } = require('./dbConfig');
 //bcrypt
 const bcrypt = require('bcrypt');
 //session
