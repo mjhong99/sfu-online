@@ -1,0 +1,148 @@
+
+body {
+	display: grid;
+	place-items: center;
+	padding: 50px;
+	background-color: #313131;
+}
+
+
+ul {
+	list-style: none;
+}
+li {
+	list-style: none;
+}
+
+/* Channel Page */
+
+.channel-container {
+	position: fixed;
+	top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+	display: grid;
+	grid:
+		'channels channel-title' 71px
+		'channels-list discussions' 1fr
+		'block channel-form' 0px
+		/ 275px 1fr;
+	overflow: hidden;
+}
+
+.channel-container body {
+	display: grid;
+	place-items: center;
+}
+
+.channels {
+	display: grid;
+	align-items: center;
+	padding: 25px 20px;
+	background: #3a3a3a;
+	grid-area: channels;
+	border-radius: 10px 0 0 0;
+	box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
+	z-index: 1;
+}
+
+.channels-list {
+	background: #3a3a3a;
+	grid-area: channels-list;
+	padding: 20px 0 0 0;
+	overflow-y: scroll;
+}
+
+.block {
+	display: grid;
+	grid: 40px / 40px;
+	align-content: center;
+	background: #3a3a3a;
+	grid-area: block;
+	border-top: 1px solid rgba(0,0,0,0.25);
+	border-radius: 0 0 0 10px;
+	padding: 0 15px;
+}
+
+
+.channel-title {
+	background: #3a3a3a;
+	display: grid;
+	align-content: center;
+	border-radius: 0 10px 0 0;
+	box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
+	grid-area: channel-title;
+	z-index: 1;
+	padding: 0 20px;
+}
+
+
+.discussions {
+	grid-area: discussions;
+	background-color: #313131;
+	padding: 30px;
+	overflow-y: scroll;
+}
+
+
+
+.discussions body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #005877;
+
+}
+
+.discussions a {
+  color: #53899e;
+}
+
+
+.discussions ul li {
+  margin-bottom: 20px;
+  box-shadow: 0 3px 7px #00577759;
+  padding: 10px;
+  border-radius: 5px;
+  width: 320px;
+  transition: 0.2s ease;
+  position: relative;
+  left: 0;
+  font-size: 1em;
+}
+
+.discussions ul li:hover {
+  left: 5px;
+}
+
+sub {
+  /* font-weight: bold; */
+  /* color: rgb(138, 138, 138); */
+  opacity: 0.7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  width: 3fr;
+  margin-bottom: 15px;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 2px 5px #00577759;
+}
+
+input[type='submit'] {
+  background-color:  #53899e;
+  color: white;
+  height: 30px;
+}

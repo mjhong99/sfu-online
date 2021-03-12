@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset ="UTF-8"/>
+        <meta name ="viewport" content= "width=device=width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Document</title>
+    </head>
+    <body>
+        <head>
+            <style>
+            .myDivision{
+                width:1000px;
+                border: 10px outset rgb(255, 255, 255);
+                background-color : red;
+                text-align:start;
+                clear: both;
+                    
+            }
+            .myDivision input{
+                width:100%;
+                clear: both;
+            }
+            </style>
+        <h1> Welcome User </h1>
+        <div class= "myDivision">
+            <h2>
+                Customize Your Personal Profile
+            </h2>
+            <h5>
+                Please fill in the following fields below
+            </h5>
+        </div>
+        <div class ="myDivision">
+
+        <form action= "/users/dashboard" method ="POST">
+        <div>
+            <input type ="text" id="firstname" name="firstname" placeholder="Firstname" required>
+        </div>
+
+
+        <div>
+            <input type ="text" id="lastname" name="lastname" placeholder="Lastname" required>
+        </div>
+
+        <div>
+            <input type ="text" id="username" name="username" placeholder="Username" required>
+        </div>
+
+        <div>
+            <input type ="text" id="biography" name="biography" placeholder="Biography" required>
+        </div>
+        <div>
+            <input type ="number" id="year" name="year" placeholder="Year" required>
+        </div>
+
+        <div>
+            <input type ="text" id="courses" name="courses" placeholder="Courses" required>
+        </div>
+
+        <div>
+            <input type="submit" value ="update"/>
+
+
+        </div>
+        </div>
+
+        <a href="/users/logout" class="btn btn-secondary">Logout</a>
+        <a href= "/users/message" class= "btn btn-secondary">Messaging</a>
+        <a href="/room" class="btn btn-secondary">Video Room</a>
+        <a href= "/users/channel" class= "btn btn-secondary">Group Channel</a>
+    
+        </form>
+    </body>
+</html>
