@@ -12,7 +12,7 @@ const socket = io('/')
 var peer = new Peer(undefined, {
 	path: '/peerjs', // we got this from server.js
 	host: '/', // can be localhost, heroku, what we are hosting
-	port: '443' // 3030 since server is on 3030 , for heroku 443?
+	port: '5432' // 3030 since server is on 3030 , for heroku 443?
 }); 
 // variable for video
 let myVideoStream; 
