@@ -93,11 +93,11 @@ app.use(express.static('public')); //accesses public folder
 app.use('/peerjs', peerServer);// in room.ejs pasted this <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
 
 app.get('/room', (req, res) =>{
-	res.redirect(`/room/${uuidv4()}`); // this line will automatically generate a uuid and redirect you to uuid link
+	res.redirect(`/${uuidv4()}`); // this line will automatically generate a uuid and redirect you to uuid link
 })
 
 // the root url takes you to page where it renders the room.ejs file
-app.get('/room/:room', (req, res) =>{ // /:room is a parameter
+app.get('/:room', (req, res) =>{ // /:room is a parameter
 	res.render('room', {roomId: req.params.room }) // roomID: is the uuid of the room
 })
 
