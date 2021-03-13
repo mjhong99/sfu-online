@@ -38,7 +38,6 @@ module.exports.updateUsername = updateUsername;
  app.use(express.static(__dirname + './views/main.js'));
 app.use(express.static(__dirname + './views/css/stylemessage.css'));
 
-const path = require('path');
 const http = require('http');
 const socketio = require('socket.io');
 const formatMessage = require('./messages')
