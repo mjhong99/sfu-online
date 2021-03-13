@@ -11,6 +11,7 @@ const bcrypt = require('bcrypt');
 const session = require('express-session');
 //flash
 const flash = require('express-flash');
+const appRootPath = require('app-root-path')
 //passport
 const passport = require('passport');
 const initializePassport = require('./passportConfig');
@@ -23,11 +24,11 @@ app.use(express.static(__dirname + '/views'));
 
 
 app.get('/style.css', (req,res)=>{
-	res.sendFile('./public/style.css')
+	res.sendFile(`${appRootPath}/public/style.css`)
 })
 
 app.get('/script.js', (req,res)=>{
-	res.sendFile('./public/script.js')
+	res.sendFile(`${appRootPath}/public/script.js`)
 })
 
 
