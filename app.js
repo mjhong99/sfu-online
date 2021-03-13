@@ -17,6 +17,7 @@ initializePassport(passport);
 
 
 // group loading
+app.use('/static',express.static('public')); //accesses public folder
 app.use(express.static(__dirname + '/views'));
 
 
@@ -85,7 +86,7 @@ const peerServer = ExpressPeerServer(server, { // using peer with express to get
   debug: true
 });
 
-app.use('/static',express.static('public')); //accesses public folder
+
 
 
 // url to access peerserver
