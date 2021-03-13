@@ -17,8 +17,8 @@ initializePassport(passport);
 
 
 // group loading
-app.use('/static',express.static('public')); //accesses public folder
-//app.use(express.static(__dirname + '/views'));
+app.use('/static',express.static(__dirname + 'public')); //accesses public folder
+app.use(express.static(__dirname + '/views'));
 
 
 
