@@ -21,7 +21,7 @@
     </div>
 
       <div class="discussions">
-        <a href="http://localhost:8000/users/new/<%=name%>" > New message</a>
+        <a href="https://sfu-online.herokuapp.com/users/new/<%=name%>" > New message</a>
         <h1><%=title%></h1>
         <ul>
           <% for(const msg of messages) {%>
@@ -66,13 +66,13 @@
         try{
             const list_channel = document.getElementById("list_channel")
 
-            let result = await fetch("http://localhost:8000/users/channel_list", {method:"GET"})
+            let result = await fetch("https://sfu-online.herokuapp.com/users/channel_list", {method:"GET"})
             const channel = await result.json();
             channel.forEach(t=>
             {
                 console.log(t)
                 var ul = document.createElement("ul")
-                ul.innerHTML += "<a href = http://localhost:8000/users/channel_page/" + t.channel_name +">" + t.channel_name + "</a>"
+                ul.innerHTML += "<a href = https://sfu-online.herokuapp.com/users/channel_page/" + t.channel_name +">" + t.channel_name + "</a>"
                 list_channel.appendChild(ul)
             })
         }

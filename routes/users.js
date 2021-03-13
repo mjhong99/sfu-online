@@ -70,7 +70,7 @@ router.get("/channel_page/:channel_name", async (req, res) => {
         messages.pop();
       }
       const {channel_name} = req.params;
-      let result = await fetch("http://localhost:8000/users/" + channel_name, {method:"GET"})
+      let result = await fetch("https://sfu-online.herokuapp.com/users/" + channel_name, {method:"GET"})
       const discussion = await result.json();
       discussion.forEach(t=>
       {
