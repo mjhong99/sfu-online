@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
 
 //Postgres setup
@@ -17,8 +18,13 @@ initializePassport(passport);
 
 
 // group loading
-app.use('/static',express.static(__dirname + '/public')); //accesses public folder
+//app.use('/static',express.static(__dirname + '/public')); //accesses public folder
 app.use(express.static(__dirname + '/views'));
+
+
+app.get('/style.css', (req,res)=>{
+	res.sendFile(path.resolve(__dirname,'/public','style.css'))
+})
 
 
 
