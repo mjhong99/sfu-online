@@ -19,17 +19,10 @@ initializePassport(passport);
 
 
 // group loading
-//app.use('/static',express.static(__dirname + '/public')); //accesses public folder
+app.use('/static',express.static(__dirname + '/static')); //accesses public folder
 app.use(express.static(__dirname + '/views'));
 
 
-app.get('/style.css', (req,res)=>{
-	res.sendFile(`${appRootPath}/public/style.css`)
-})
-
-app.get('/script.js', (req,res)=>{
-	res.sendFile(`${appRootPath}/public/script.js`)
-})
 
 
 
