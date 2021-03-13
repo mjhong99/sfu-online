@@ -23,7 +23,11 @@ app.use(express.static(__dirname + '/views'));
 
 
 app.get('/style.css', (req,res)=>{
-	res.sendFile(path.resolve(__dirname,'/public','style.css'))
+	res.sendFile('./public/style.css')
+})
+
+app.get('/script.js', (req,res)=>{
+	res.sendFile('./public/script.js')
 })
 
 
