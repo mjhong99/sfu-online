@@ -85,7 +85,7 @@ const peerServer = ExpressPeerServer(server, { // using peer with express to get
   debug: true
 });
 
-app.use(express.static('public')); //accesses public folder
+app.use('/static',express.static('public')); //accesses public folder
 
 
 // url to access peerserver
