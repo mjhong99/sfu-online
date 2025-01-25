@@ -29,13 +29,14 @@ Channel: As a user, I want to be able to find the channel or create a new channe
     - Messaging interface
     - Group channels
     - Dashboard
+    - Video Room
+    - All features accessing the same database
 
 **Features Planned**
-    - Hosting postgres on Heroku
+    - Hosting postgres on Render
     - Refactoring code
-    - All features accessing the same database
-    - Video features
-    - Updating UI interface
+
+    
 
 **Instructions to run code**
     - cd into project/SFUO
