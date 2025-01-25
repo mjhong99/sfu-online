@@ -43,5 +43,3 @@ Channel: As a user, I want to be able to find the channel or create a new channe
 
 
 
-GitLab URL: https://csil-git1.cs.surrey.sfu.ca/hello-world
-(Group ID: 8132)
