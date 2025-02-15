@@ -31,6 +31,7 @@ Channel: As a user, I want to be able to find the channel or create a new channe
     - Dashboard
     - Video Room
     - All features accessing the same database
+    - Project hosted on Heroku* (not working anymore)
 
 **Features Planned**
     - Hosting postgres on Render
